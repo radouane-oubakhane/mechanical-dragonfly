@@ -1,0 +1,4 @@
+static: 48 textured primitives, exact triangle corners, valid tangent frames, 24 PNGs; hierarchy and animations unchanged
+animated: 135 textured primitives, exact triangle corners, valid tangent frames, 24 PNGs; hierarchy and animations unchanged
+Static GLB reimport: 1709 geometry nodes; all Step 17 checks passed
+Previous files verified byte-for-byte: 96 (excluding updated README and requirements).

@@ -1,0 +1,6 @@
+Step 20 actual validation output:
+static: 1144 wing panels; identical triangles, prior buffer, materials, node hierarchy and animation; 35 embedded maps
+animated: 1144 wing panels; identical triangles, prior buffer, materials, node hierarchy and animation; 35 embedded maps
+Determinism, input validation, uncoated variant, overwrite rejection and GLB reimport passed.
+
+Full earlier suite not rerun. Visual appearance not tested.

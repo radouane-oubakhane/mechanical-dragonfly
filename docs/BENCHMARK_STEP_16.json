@@ -1,0 +1,152 @@
+{
+  "step_15_assembled.glb": {
+    "mesh_nodes": 5769,
+    "unique_meshes": 5769,
+    "primitive_instances": 5769,
+    "materials": 93,
+    "triangles": 504756,
+    "animation_channels": 0,
+    "bytes": 6541120,
+    "load_and_bounds_seconds": [
+      0.7145193460000883,
+      0.5684649210002135
+    ],
+    "bounds_mm": [
+      [
+        -198.30999992042786,
+        -200.09106030464173,
+        -40.380000084638596
+      ],
+      [
+        57.40473802275955,
+        200.09106030464173,
+        20.05999907851219
+      ]
+    ]
+  },
+  "dragonfly_static_balanced.glb": {
+    "mesh_nodes": 1709,
+    "unique_meshes": 1468,
+    "primitive_instances": 1709,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 0,
+    "bytes": 9722356,
+    "load_and_bounds_seconds": [
+      0.1823523739999473,
+      0.4429211609999584
+    ],
+    "bounds_mm": [
+      [
+        -198.3100026845932,
+        -200.09106397628784,
+        -40.380001068115234
+      ],
+      [
+        57.404737919569016,
+        200.09106397628784,
+        20.05999907851219
+      ]
+    ]
+  },
+  "dragonfly_static_performance.glb": {
+    "mesh_nodes": 91,
+    "unique_meshes": 91,
+    "primitive_instances": 91,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 0,
+    "bytes": 9273820,
+    "load_and_bounds_seconds": [
+      0.07128591000036977,
+      0.06551386799992542
+    ],
+    "bounds_mm": [
+      [
+        -198.3100026845932,
+        -200.09106397628784,
+        -40.380001068115234
+      ],
+      [
+        57.404737919569016,
+        200.09106397628784,
+        20.05999907851219
+      ]
+    ]
+  },
+  "dragonfly_animated.glb": {
+    "mesh_nodes": 5769,
+    "unique_meshes": 5769,
+    "primitive_instances": 5769,
+    "materials": 93,
+    "triangles": 504756,
+    "animation_channels": 16,
+    "bytes": 6562420,
+    "load_and_bounds_seconds": [
+      0.6990985299999011,
+      0.8909165369996117
+    ],
+    "bounds_mm": [
+      [
+        -198.30999992042786,
+        -200.09106030464173,
+        -40.380000084638596
+      ],
+      [
+        57.40473802275955,
+        200.09106030464173,
+        20.05999907851219
+      ]
+    ]
+  },
+  "dragonfly_animated_balanced.glb": {
+    "mesh_nodes": 1845,
+    "unique_meshes": 1604,
+    "primitive_instances": 1845,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 16,
+    "bytes": 9839680,
+    "load_and_bounds_seconds": [
+      0.22872497099979228,
+      0.4463449239997317
+    ],
+    "bounds_mm": [
+      [
+        -198.3099990934134,
+        -200.09106545448302,
+        -40.380001068115234
+      ],
+      [
+        57.404738628864294,
+        200.09106545448302,
+        20.05999907851219
+      ]
+    ]
+  },
+  "dragonfly_animated_performance.glb": {
+    "mesh_nodes": 239,
+    "unique_meshes": 239,
+    "primitive_instances": 239,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 16,
+    "bytes": 9403232,
+    "load_and_bounds_seconds": [
+      0.09443641400002889,
+      0.09108338699979868
+    ],
+    "bounds_mm": [
+      [
+        -198.3099990934134,
+        -200.09106545448302,
+        -40.380001068115234
+      ],
+      [
+        57.404738628864294,
+        200.09106545448302,
+        20.05999907851219
+      ]
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+# Step 29 — Dragonfly Control Studio
+
+Start at the repository root: `python app/server.py`. If the browser does not open, use `http://127.0.0.1:8765/`. `--port 8766` changes the port; `--no-browser` disables automatic opening. Ctrl+C stops the server. The server is bound to loopback, not intended for public deployment. The application uses existing Python dependencies and local assets, no CDN. A WebGL2-capable browser is needed for interactive rendering; Linux EGL/OpenGL libraries are needed for native studio PNGs.
+
+- Assembly: choose any of the 15 static stages, balanced or performance static, or the complete articulated flight model. Drag to orbit, wheel to zoom, switch projections and camera presets.
+- Motion: choose any of five existing clips, play/pause, adjust speed or scrub the timeline. Authored clips loop; flight clips stop at their end. Manual pose overrides are layered over a sampled animation, and can be cleared. The static model variants have no rig.
+- Wing pose: independent flap and pitch sliders, in degrees. Manual poses override wings only, not transmission gears.
+- Head: body-frame target in metres; existing Step 25 bounded aiming solver. Abdomen: Step 26 curvature distribution. Leg IK: offsets from neutral foot in mm, Step 27 solver; unreachable targets leave pose unchanged.
+- Flight lab: Step 28 simulated mass, frequency limit and duration. The viewport follows the simulated body, with approximate phase-driven wings. Custom flight preview does not recalculate the transmission, legs, head or abdomen; use the bundled flight clips for full synchronized playback. Telemetry is sampled at 60 Hz, body and phase interpolation is used for display. Actual high-frequency wing motion can alias at display frame rates. Telemetry CSV is downsampled; original full-resolution telemetry remains in earlier stages.
+- Export: viewport PNG, frozen-pose GLB (retains geometry/material buffers, removes animation metadata), original model with its animation clips, and native Step 22 studio PNG. Native PNG uses the current model and pose, azimuth/elevation/zoom and lighting preset, automatic framing and no ground. WebGL fallback offers static native renders and original downloads only.
+
+## Limitations
+Interactive WebGL shader implements base color and metallic/roughness maps, simplified highlights, transparency and iridescence; it is not the complete PBR studio pipeline. No normal map sampling, true refraction, self-shadowing or interactive physics contacts. Native studio rendering retains Stage 22 approximations. Manual controls set static angles rather than applying rate-limited controller dynamics. No GPU FPS benchmark. This is a simulation/visualization console, not flight-ready robotics software.
+
+## Validation
+`python tests/test_step_29.py` checks models, Python pose and simulation operations, geometry-preserving pose GLB export, and local HTTP serving. Optional Node 22+: `node --experimental-default-type=module tests/test_step_29_viewer.mjs` checks model loading and clip sampling with a mock graphics API. It is not a real browser rendering test. This environment blocks browser HTTP navigation and cannot create WebGL2 contexts; real interactive rendering remains unverified. Native PNG endpoint was exercised successfully using the complete model. Earlier regression suite not rerun.

@@ -1,0 +1,5 @@
+Executed python tests/test_step_26.py: PASS.
+10 bounded joints; alternating Y/Z axes; slew limits; rigid segment distances; posture and periodic profiles; 46 unchanged tracks per clip; exact source BIN prefix; geometry/material preservation; custom posture and pose export.
+Executed python simulation/step_26_abdominal_articulation.py: PASS (3 clips, 56 tracks each, 241 abdominal samples per track).
+Executed python simulation/preview_step_26.py --frames 4: PASS (GIF and PNG contact sheet; visually inspected).
+Previous full regression suite not rerun. No collision, cable flexibility or physical flight validation.

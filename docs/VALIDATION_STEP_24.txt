@@ -1,0 +1,7 @@
+Step 24 validation
+PASS: 504,756 triangles, 91 materials, 35 embedded images, material definitions identical to Step 23.
+PASS: all original 16 tracks in each of three clips retained (time and quaternion values).
+PASS: 24 new moving groups, 40 additional TRS tracks per clip, 56 total per clip, 168 total.
+PASS: periodic endpoints, normalized quaternions, positive scaling, opposing gear rotations, rocker and connecting rod endpoint equations, baked pose export.
+PASS: four actual studio renders exported as GIF and contact sheet.
+Earlier regression suite not rerun. Physical constraints, collision and torque not validated. UVs were regenerated when moving groups were separated.

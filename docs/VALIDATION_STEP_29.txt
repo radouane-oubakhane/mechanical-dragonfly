@@ -1,0 +1,5 @@
+PASS: Five Python tests: model registry, all six leg targets/head/abdomen, flight, pose GLB byte preservation, HTTP routes.
+PASS: JavaScript syntax; Node mock-WebGL actual GLB parse, all 5 clips, animation sampling, manual override, stage switch.
+PASS: Actual native studio PNG HTTP export from complete model.
+BLOCKED: Real browser navigation ERR_BLOCKED_BY_ADMINISTRATOR; isolated Chromium WebGL2 context unavailable. No real interactive GPU test; no screenshot claimed.
+NOT RUN: Prior full regression suite; hardware GPU benchmark.

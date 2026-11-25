@@ -1,0 +1,21 @@
+Six leg paths solved
+Leg hierarchy rigged and batched
+Materials reapplied
+{
+  "stats": {
+    "mesh_nodes": 2074,
+    "unique_meshes": 1833,
+    "primitive_instances": 2074,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 294
+  },
+  "channels": {
+    "hover": 98,
+    "forward": 98,
+    "turn_left": 98
+  },
+  "max_ik_error_mm": 2.8609792490763985e-14,
+  "output": "/mnt/data/dragonfly_stage27/mechanical_dragonfly/models/dragonfly_legs_animated.glb"
+}
+PASS: six legs, four modes, IK reachability, mirrored paths, joint limits, foot pitch, rigid link lengths, 42 rig nodes, 56 exact prior tracks per clip, 98 tracks per clip, 504756 triangles, 35 texture hashes. Max sampled IK error: 0.00000000 mm

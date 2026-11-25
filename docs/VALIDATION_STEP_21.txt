@@ -1,0 +1,4 @@
+PASS: scene ingestion, triangle count, 35 textures, material classification
+PASS: both camera projections, shader compilation, textured rendering, antialiasing and PNG export
+Backend: llvmpipe (LLVM 19.1.7, 256 bits)
+PASS: source GLB unchanged

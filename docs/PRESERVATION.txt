@@ -1,0 +1,2 @@
+59 previous component/model/test files unchanged byte-for-byte.
+Centralized CLI output byte-identical to bundled final model.

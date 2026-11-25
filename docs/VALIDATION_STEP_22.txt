@@ -1,0 +1,5 @@
+PASS: three deterministic linear HDR environments
+PASS: floor placement, projected shadow and contact masks, soft boundaries
+PASS: actual OpenGL rendering, floor toggle, perspective, lighting differences, supersampling and PNG export
+PASS: original model unchanged
+PASS: 172 previous files preserved (README intentionally extended).

@@ -1,0 +1,7 @@
+# Stage 15 — Thorax armor and final integration
+
+The final module adds 98 meshes. It mounts to the existing chassis `thorax_armor` anchor, above and around the internal drive system, using four local attachment frames (`mount`, `inspection`, `service_left`, `service_right`). The open-sided design leaves the wing actuators exposed and the leg mounts unobstructed in the neutral pose. It includes six lateral shells with three through-slots each, 12 gaps between dorsal ventilation bars, a transparent inspection plate and its retainers, roof support arches, titanium mounting hardware, a three-panel ventral keel and raised cyan identity accents. The shell is intentionally cut away rather than fully enclosing the thorax. Mounting hardware intentionally engages or overlaps structural surfaces; only targeted clearance checks were made.
+
+`create_thorax_armor(scale) -> Module` creates an independent armor assembly. `add_thorax_armor(scene, scale)` appends it to an owned prior scene. `build_stage_15(scale) -> (Module, Scene)` builds all stages from source. `simulation/animation.py` reads the static GLB and adds 16 animated rotation nodes without changing any neutral mesh world transforms. Animation uses the original joint attachment frames and includes a nested head and abdomen hierarchy; leg axes are retained in component code but are not animated.
+
+All physical dimensions are conceptual. Materials are untextured approximations, identification accents are raised rather than engraved, and no photorealistic render is bundled.

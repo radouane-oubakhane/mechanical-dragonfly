@@ -1,0 +1,24 @@
+{
+  "before": {
+    "mesh_nodes": 1709,
+    "unique_meshes": 1468,
+    "primitive_instances": 1709,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 0
+  },
+  "after": {
+    "mesh_nodes": 1709,
+    "unique_meshes": 1468,
+    "primitive_instances": 1709,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 0
+  },
+  "textured_materials": 48,
+  "textured_primitives": 48,
+  "texture_images": 24,
+  "source_bytes": 9722356,
+  "output_bytes": 61847708,
+  "anisotropy": true
+}

@@ -1,0 +1,119 @@
+FINAL VALIDATION — STEP 30
+Six new tests and Stage 22, 28, 29 regression checks executed. Full earlier suite not rerun.
+test_all_assembly_stages (__main__.CinematicTests.test_all_assembly_stages) ... ok
+test_fixed_camera_extent (__main__.CinematicTests.test_fixed_camera_extent) ... ok
+test_slow_motion (__main__.CinematicTests.test_slow_motion) ... ok
+test_turntable_and_macro (__main__.CinematicTests.test_turntable_and_macro) ... ok
+test_validation (__main__.CinematicTests.test_validation) ... ok
+test_video_encoding (__main__.CinematicTests.test_video_encoding) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.227s
+
+OK
+PASS: three deterministic linear HDR environments
+PASS: floor placement, projected shadow and contact masks, soft boundaries
+PASS: actual OpenGL rendering, floor toggle, perspective, lighting differences, supersampling and PNG export
+PASS: original model unchanged
+test_convergence (__main__.FlightTests.test_convergence) ... ok
+test_export_preservation_and_tracks (__main__.FlightTests.test_export_preservation_and_tracks) ... ok
+test_geometry (__main__.FlightTests.test_geometry) ... ok
+test_gravity_and_trim (__main__.FlightTests.test_gravity_and_trim) ... ok
+test_hover_and_forward (__main__.FlightTests.test_hover_and_forward) ... ok
+test_saturation_and_validation (__main__.FlightTests.test_saturation_and_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.479s
+
+OK
+test_export (__main__.ControlTests.test_export) ... ok
+test_flight (__main__.ControlTests.test_flight) ... ok
+test_head_abdomen_leg (__main__.ControlTests.test_head_abdomen_leg) ... ok
+test_http (__main__.ControlTests.test_http) ... 127.0.0.1 - - [25/Nov/2026 06:20:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 06:20:17] "GET /api/models HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 06:20:17] "GET /model/1 HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 06:20:17] "POST /api/pose HTTP/1.1" 200 -
+ok
+test_models (__main__.ControlTests.test_models) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 3.596s
+
+OK
+Full HD still render:
+{
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "opengl": "4.5 (Core Profile) Mesa 25.0.7-2",
+  "triangles": 504756,
+  "opaque_draws": 78,
+  "transparent_draws": 1631,
+  "textures": 35,
+  "size": [
+    1920,
+    1080
+  ],
+  "supersample": 2,
+  "seconds": 4.81,
+  "output": "dragonfly_final_hero.png",
+  "preset": "cinematic",
+  "ground": true,
+  "hdr_peak": 7.3627495765686035,
+  "floor_z_m": -0.04098000106811524
+}
+Full HD macro render:
+{
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "opengl": "4.5 (Core Profile) Mesa 25.0.7-2",
+  "triangles": 504756,
+  "opaque_draws": 78,
+  "transparent_draws": 1631,
+  "textures": 35,
+  "size": [
+    1920,
+    1080
+  ],
+  "supersample": 2,
+  "seconds": 4.038,
+  "output": "dragonfly_final_macro.png",
+  "preset": "cinematic",
+  "ground": true,
+  "hdr_peak": 7.3627495765686035,
+  "floor_z_m": -0.04098000106811524
+}
+Showcase export:
+{
+  "sequence": "showcase",
+  "frames": 51,
+  "unique_renders": 51,
+  "fps": 6,
+  "duration_seconds": 8.5,
+  "resolution": [
+    640,
+    360
+  ],
+  "preset": "cinematic",
+  "ground": false,
+  "titles": true,
+  "motion_speed": 0.25,
+  "render_seconds": 76.18,
+  "output": "dragonfly_showcase.mp4"
+}
+{
+    "programs": [
+
+    ],
+    "stream_groups": [
+
+    ],
+    "streams": [
+        {
+            "codec_name": "h264",
+            "width": 640,
+            "height": 360,
+            "r_frame_rate": "6/1",
+            "duration": "8.500000",
+            "nb_frames": "51"
+        }
+    ]
+}
+Visual inspection: contact sheet and two stills reviewed. Software Mesa rendering; WebGL and physical accuracy unverified.

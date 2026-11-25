@@ -1,0 +1,7 @@
+numpy==2.3.5
+trimesh==4.11.1
+shapely==2.1.2
+scipy
+pyglet<2
+
+Pillow

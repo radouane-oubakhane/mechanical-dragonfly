@@ -1,0 +1,33 @@
+# Local environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated 3D models, renders, and simulation output
+models/*
+!models/.gitkeep
+renders/*
+!renders/.gitkeep
+telemetry/*.csv
+telemetry/*.json
+
+# Local agent and cloud configuration
+.agents/
+.codex/
+.aws/
+.git-local/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*~

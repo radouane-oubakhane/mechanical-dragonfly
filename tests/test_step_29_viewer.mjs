@@ -1,0 +1,8 @@
+// Tests JavaScript GLB decoding, scene graph and animation with a stub GL API.
+// This does NOT validate real shaders, GPU rendering, or browser performance.
+import fs from 'node:fs/promises';import assert from 'node:assert/strict';
+import {Viewer} from '../app/viewer.js';
+let constants=100;let gl=new Proxy({}, {get(o,k){if(k in o)return o[k];if(k.startsWith('create'))return ()=>({});if(k==='getShaderParameter'||k==='getProgramParameter')return ()=>true;if(k==='getUniformLocation')return ()=>0;if(k===k.toUpperCase())return o[k]=constants++;return ()=>{}}});
+globalThis.ResizeObserver=class{observe(){}};globalThis.devicePixelRatio=1;globalThis.createImageBitmap=async()=>({close(){}});globalThis.fetch=async url=>new Response(await fs.readFile(new URL('../models/'+url,import.meta.url)));
+let canvas={clientWidth:800,clientHeight:600,getContext:()=>gl};let viewer=new Viewer(canvas);await viewer.load('dragonfly_flight.glb');assert.equal(viewer.clips.length,5);assert.equal(viewer.nodes.length,2159);assert(viewer.radius>.1);viewer.sample(viewer.clips[0],.25);assert(Object.keys(viewer.pose).length>70);let wing=viewer.names.get('rig_wing_fore_left');assert(viewer.pose[wing].rotation.length===4);viewer.override({'rig_wing_fore_left':[0,0,0,1]});assert.equal(viewer.overrides[wing].rotation[3],1);viewer.render();assert(viewer.drawCount>1800);console.log('Full model decoded; 5 clips; render submission:',viewer.drawCount);
+await viewer.load('step_01_chassis.glb');viewer.render();assert.equal(viewer.drawCount,10);assert.equal(viewer.clips.length,0);console.log('Stage 01 decoded; 10 parts; prior GPU resources released (stub).');

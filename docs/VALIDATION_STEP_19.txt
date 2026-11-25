@@ -1,0 +1,3 @@
+static: 9 optical materials, 487 instances; exact original binary, geometry, 32 textures, rig and unrelated materials preserved
+animated: 9 optical materials, 487 instances; exact original binary, geometry, 32 textures, rig and unrelated materials preserved
+Uncoated variant, overwrite rejection and static GLB reimport passed.

@@ -1,0 +1,29 @@
+{
+  "before": {
+    "mesh_nodes": 1845,
+    "unique_meshes": 1604,
+    "primitive_instances": 1845,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 16
+  },
+  "after": {
+    "mesh_nodes": 1845,
+    "unique_meshes": 1604,
+    "primitive_instances": 1845,
+    "materials": 91,
+    "triangles": 504756,
+    "animation_channels": 16
+  },
+  "optical_materials": 9,
+  "optical_instances": {
+    "power_window": 1,
+    "thorax_window": 1,
+    "compound": 482,
+    "ocellus": 3
+  },
+  "coatings": true,
+  "texture_images": 32,
+  "source_bytes": 70265084,
+  "output_bytes": 70268436
+}

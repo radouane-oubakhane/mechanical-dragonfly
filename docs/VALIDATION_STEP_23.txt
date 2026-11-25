@@ -1,0 +1,12 @@
+Stage 23 validation
+test_export_preservation (__main__.WingTests.test_export_preservation) ... ok
+test_limits_and_sampling (__main__.WingTests.test_limits_and_sampling) ... ok
+test_phase_symmetry_and_controls (__main__.WingTests.test_phase_symmetry_and_controls) ... ok
+test_pose_export (__main__.WingTests.test_pose_export) ... ok
+test_preview (__main__.WingTests.test_preview) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.618s
+
+OK
+Previous files: 183 unchanged; README intentionally updated.

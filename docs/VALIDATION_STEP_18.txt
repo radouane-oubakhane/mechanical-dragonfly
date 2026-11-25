@@ -1,0 +1,3 @@
+static: 8 carbon materials, 8 recharted primitives, exact corners, all original materials/animation preserved except targeted carbon, 32 embedded PNGs
+animated: 8 carbon materials, 35 recharted primitives, exact corners, all original materials/animation preserved except targeted carbon, 32 embedded PNGs
+Static GLB reimport passed; deterministic textures and all Step 18 checks passed.

@@ -1,0 +1,21 @@
+{
+  "title": "The Last Flight",
+  "duration": 25,
+  "preset": "cinematic",
+  "flight_height_m": 0.35,
+  "travel_m": 0.45,
+  "failed_wing": "fore_left",
+  "timeline": [
+    {"time": 0, "action": "idle"},
+    {"time": 3, "action": "power_on"},
+    {"time": 5, "action": "scan"},
+    {"time": 7, "action": "takeoff"},
+    {"time": 10, "action": "flight"},
+    {"time": 14, "action": "failure"},
+    {"time": 16, "action": "unstable"},
+    {"time": 18, "action": "fall"},
+    {"time": 20, "action": "impact"},
+    {"time": 21, "action": "twitch"},
+    {"time": 24, "action": "shutdown"}
+  ]
+}

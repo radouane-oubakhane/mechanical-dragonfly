@@ -1,0 +1,30 @@
+{
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "opengl": "4.5 (Core Profile) Mesa 25.0.7-2",
+  "triangles": 504756,
+  "opaque_draws": 78,
+  "transparent_draws": 1631,
+  "textures": 35,
+  "size": [
+    1800,
+    1200
+  ],
+  "supersample": 2,
+  "seconds": 2.922,
+  "output": "dragonfly_stage21.png"
+}
+{
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "opengl": "4.5 (Core Profile) Mesa 25.0.7-2",
+  "triangles": 504756,
+  "opaque_draws": 78,
+  "transparent_draws": 1631,
+  "textures": 35,
+  "size": [
+    1200,
+    900
+  ],
+  "supersample": 2,
+  "seconds": 2.126,
+  "output": "dragonfly_head_detail.png"
+}

@@ -1,0 +1,11 @@
+test_convergence (__main__.FlightTests.test_convergence) ... ok
+test_export_preservation_and_tracks (__main__.FlightTests.test_export_preservation_and_tracks) ... ok
+test_geometry (__main__.FlightTests.test_geometry) ... ok
+test_gravity_and_trim (__main__.FlightTests.test_gravity_and_trim) ... ok
+test_hover_and_forward (__main__.FlightTests.test_hover_and_forward) ... ok
+test_saturation_and_validation (__main__.FlightTests.test_saturation_and_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.400s
+
+OK

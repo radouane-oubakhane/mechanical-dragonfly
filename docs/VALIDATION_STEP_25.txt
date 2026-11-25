@@ -1,0 +1,4 @@
+Executed tests/test_step_25.py successfully.
+PASS: exact target aiming for reachable targets, limit saturation, world gaze compensation, exponential rate-limited controller, invalid inputs, exact source binary prefix and mesh/material/node preservation, 54 unchanged tracks per clip, 2 bounded periodic head tracks, custom target and static pose export.
+All three output clips have 56 tracks, 241 head keys per track and 504756 triangles, with 35 original textures. Maximum sampled yaw/pitch rates in degrees/second: hover 56.5422/21.9886, forward 40.2714/25.3856, turn_left 47.8777/22.2793.
+Four actual OpenGL rendered poses and GIF generated and contact sheet inspected. Preview framing can vary slightly as the existing camera uses pose bounds. The full earlier test suite was not rerun.
